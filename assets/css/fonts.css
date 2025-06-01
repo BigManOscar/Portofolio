@@ -1,0 +1,46 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+   
+}
+
+.project {
+    position: relative;
+    width: 30%;
+    background-color: #202833;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 10px;
+}
+
+.project-info {
+    padding: 20px;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.project:hover,
+.project:focus-within {
+    transform: scale(1.05); 
+}
+
+.project:hover .project-info,
+.project:focus-within .project-info {
+    opacity: 1; 
+}
+.project a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project a:hover {
+    text-decoration: none;
+}
+
+
+
+  
